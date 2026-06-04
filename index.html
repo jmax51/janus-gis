@@ -2,9 +2,21 @@
     <html>
         <head>
             <title>Janus GIS</title>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+                #map {
+                    height: 100vh;
+                    width: 100vw;
+                }
+            </style>
         </head>
         <body>
-            <h1>Hello Janus</h1>
+            <div id="map"></div>
             <h2>we're gonna put the GIS here</h2>
             <h3>it's gonna be so chill</h3>
         </body>
