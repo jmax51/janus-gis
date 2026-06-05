@@ -16,14 +16,18 @@
             </style>
         </head>
         <body>
-            <div id="map"></div>
-            <script>
-                var map = L.map('map').setView([45.75, 4.85], 13);
-                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-            </script>
-            <h2>we're gonna put the GIS here</h2>
-            <h3>it's gonna be so chill</h3>
+            <nav id="navbar">
+                <img src="assets/janus-logo-long-transparent-1.png" alt="Janus France Logo">
+                <ul>
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="#methods">Methods</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <section id="intro">
+                <h1>Janus France & WPI Impact Evaluation and Community Outreach</h1>
+                <p>This project evaluates the community impact of Janus France, a community bike workshop association based in Lyon, France. Using a mixed-methods approach combining surveys, interviews, and GIS mapping, we assess how Janus France contributes to sustainable urban mobility and community well-being.</p>
+            </section>   
         </body>
     </html>
