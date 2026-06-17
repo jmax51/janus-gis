@@ -29,5 +29,23 @@
                 <h1>Janus France & WPI Impact Evaluation and Community Outreach</h1>
                 <p>This project evaluates the community impact of Janus France, a community bike workshop association based in Lyon, France. Using a mixed-methods approach combining surveys, interviews, and GIS mapping, we assess how Janus France contributes to sustainable urban mobility and community well-being.</p>
             </section>   
+            <section id="map">
+                <h2>Interactive GIS Map</h2>
+                <div id="map"></div>
+            </section>
+            <script>
+                var map = L.map('map').setView([45.75, 4.85], 13);
+
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+            </script>
+            <section id="methods">
+                <h2>Placeholder for research methods</h2>
+            </section>
+            <section id="gallery">
+                <h2>Placeholder for photo gallery</h2>
+            </section>
         </body>
     </html>
+
