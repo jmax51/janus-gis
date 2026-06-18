@@ -1,17 +1,74 @@
 <DOCTYPE html>
     <html>
         <head>
+            <link href="https://fonts.googleapis.com/css2?family=Pliant&display=swap" rel="stylesheet"/>
             <title>Janus GIS</title>
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
             <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
             <style>
-                body {
+                * {
                     margin: 0;
                     padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Pliant', sans-serif;
+                }
+                body {
+                    background-color: #ffffff;
+                    color: #333333
+                }
+                #navbar {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 30px;
+                    background-color: #ffffff;
+                    border-bottom: 2px solid #F07B28;
+                    position: sticky;
+                    top: 0;
+                    z-index: 1000;
+                }
+                #navbar img {
+                    height: 50px;
+                }
+                #navbar ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 30px;
+                }
+                #navbar a {
+                    text-decoration: none;
+                    color: #333333;
+                    font-weight: bold;
+                }
+                #navbar a:hover {
+                    color: #F07B28;
+                }
+                #intro {
+                    padding: 80px 200px;
+                    text-align: center;
+                    background-color: #f9f9f9;
+                }
+                #intro h1 {
+                    color: #F07B28;
+                    margin-bottom: 20px;
+                }
+                #map-section {
+                    padding: 40px;
+                }
+                #map-section h2 {
+                    color: #F07B28;
+                    margin-bottom: 20px;
                 }
                 #map {
-                    height: 100vh;
-                    width: 100vw;
+                    height: 500px;
+                    width: 100%;
+                }
+                #methods, #gallery {
+                    padding: 80px 200px;
+                }
+                h2 {
+                    color: #F07B28;
+                    margin-bottom: 20px;
                 }
             </style>
         </head>
@@ -20,7 +77,7 @@
                 <img src="assets/janus-logo-long-transparent-1.png" alt="Janus France Logo">
                 <ul>
                     <li><a href="#intro">Home</a></li>
-                    <li><a href="#map">Map</a></li>
+                    <li><a href="#map-section">Map</a></li>
                     <li><a href="#methods">Methods</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                 </ul>
@@ -29,7 +86,7 @@
                 <h1>Janus France & WPI Impact Evaluation and Community Outreach</h1>
                 <p>This project evaluates the community impact of Janus France, a community bike workshop association based in Lyon, France. Using a mixed-methods approach combining surveys, interviews, and GIS mapping, we assess how Janus France contributes to sustainable urban mobility and community well-being.</p>
             </section>   
-            <section id="map">
+            <section id="map-section">
                 <h2>Interactive GIS Map</h2>
                 <div id="map"></div>
             </section>
