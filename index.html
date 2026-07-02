@@ -64,7 +64,7 @@
                     width: 100%;
                 }
                 #methods, #gallery {
-                    padding: 80px 200px;
+                    padding: 40px;
                 }
                 h2 {
                     color: #F07B28;
@@ -89,6 +89,38 @@
                 .team-member h3 {
                     margin-top: 10px;
                     color: #4CAF50
+                }
+                .gallery-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 15px;
+                    margin-top: 30px
+                }
+                .gallery-item {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                }
+                .gallery-item img {
+                    width: 100%;
+                    height: 350px;
+                    object-fit: cover;
+                    display: block;
+                }
+                .caption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right 0;
+                    background-color: rgba(240, 123, 40, 0,85);
+                    color: white;
+                    padding: 10px;
+                    text-align: center;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                .gallery-item:hover .caption {
+                    opacity: 1;
                 }
             </style>
         </head>
@@ -135,10 +167,47 @@
                 }).addTo(map);
             </script>
             <section id="methods">
-                <h2>Placeholder for research methods</h2>
+                <h2>placeholder for methods</h2>
             </section>
             <section id="gallery">
-                <h2>Placeholder for photo gallery</h2>
+                                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/janus1.JPG" alt="Janus Photo 1">
+                        <div class="caption">Griffin and Teague working with Janus bike mechanic Victor</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/janus2.JPG" alt="Janus Photo 2">
+                        <div class="caption">Janus cycling event</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/janus3.JPEG" alt="Janus Photo 3">
+                        <div class="caption">Velo-Ecole event</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/janus4.jpg" alt="Janus Photo 4">
+                        <div class="caption">Venissieux old workshop before relocation</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/janus5.jpg" alt="Janus Photo 5">
+                        <div class="caption">Venissieux new workshop before relocation</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/janus6.jpg" alt="Janus Photo 6">
+                        <div class="caption">Moving bike wheels to the new workshop</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/janus7.jpg" alt="Janus Photo 7">
+                        <div class="caption">Setting up the wheel rack at the new workshop</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/janus8.jpg" alt="Janus Photo 8">
+                        <div class="caption">Moving to new workshop</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/janus9.jpg" alt="Janus Photo 9">
+                        <div class="caption">Teague</div>
+                    </div>
+                </div>
             </section>
         </body>
     </html>
