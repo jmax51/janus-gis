@@ -91,6 +91,22 @@
                     margin-top: 10px;
                     color: #4CAF50
                 }
+                .methods-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 30px;
+                    margin-top: 30px;
+                }
+                .method-item {
+                    background-color: #f9f9f9;
+                    border-left: 4px solid #F07B28;
+                    padding: 20px;
+                    border-radius: 4px;
+                }
+                .method-item h3 {
+                    color: #4CAF50;
+                    margin-bottom: 10px;
+                }
                 .gallery-grid {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
@@ -112,7 +128,7 @@
                     position: absolute;
                     bottom: 0;
                     left: 0;
-                    right 0;
+                    right: 0;
                     background-color: rgba(240, 123, 40, 0,85);
                     color: white;
                     padding: 10px;
@@ -182,10 +198,30 @@
                 });
             </script>
             <section id="methods">
-                <h2>placeholder for methods</h2>
+                <h2>Research Methods</h2>
+                <p>To evaluate Janus France's impact across Lyon's 8th arrondissement, Vénissieux, and Oullins, we used four complementary methods:</p>
+                <div class="methods-grid">
+                <div class="method-item">
+                    <h3>Surveys</h3>
+                    <p>Distributed at Janus workshops and online, gathering community feedback on program accessibility, cycling habits, and awareness of Janus's services across the three neighborhoods.</p>
+                </div>
+                <div class="method-item">
+                    <h3>Interviews</h3>
+                    <p>Semi-structured conversations with Janus staff, volunteers, and community members to capture the lived experiences and personal impact of the organization's work that numbers alone can't show.</p>
+                </div>
+                <div class="method-item">
+                    <h3>Bicycle Traffic Counts</h3>
+                    <p>Manual observational counts at six locations across Lyon between 7AM and 6PM on weekdays, filling gaps in the existing Grand Lyon dataset and establishing cycling baselines near Janus facilities.</p>
+                </div>
+                <div class="method-item">
+                    <h3>GIS Mapping</h3>
+                    <p>Open-source spatial analysis using QGIS, overlaying cycling infrastructure, workshop locations, QPV boundaries, and survey response data to visualize Janus's territorial reach across the Lyon metropole.</p>
+                </div>
+                </div>
             </section>
             <section id="gallery">
-                                <div class="gallery-grid">
+                <h2>Photo Gallery</h2>
+                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <img src="assets/janus1.JPG" alt="Janus Photo 1">
                         <div class="caption">Griffin and Teague working with Janus bike mechanic Victor</div>
