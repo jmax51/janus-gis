@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"name": "Heatmap-SurveyResponces",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "Survey_Perception": "2", "Biking_Frequency": "1 < year" }, "geometry": { "type": "Point", "coordinates": [ 539991.912803962244652, 5741685.300081144087017 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "3", "Biking_Frequency": "1 < year" }, "geometry": { "type": "Point", "coordinates": [ 543174.63674162235111, 5737534.934799800626934 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "4", "Biking_Frequency": "1–5 years" }, "geometry": { "type": "Point", "coordinates": [ 540085.179439498111606, 5741510.425139514729381 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "5", "Biking_Frequency": "1–5 years" }, "geometry": { "type": "Point", "coordinates": [ 540971.21247708844021, 5736112.61860787961632 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "1", "Biking_Frequency": "10 > years" }, "geometry": { "type": "Point", "coordinates": [ 541507.495631419471465, 5739248.709227771498263 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "6", "Biking_Frequency": "6–10 years" }, "geometry": { "type": "Point", "coordinates": [ 544672.669797371141613, 5732546.799919337965548 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "7", "Biking_Frequency": "1–5 years" }, "geometry": { "type": "Point", "coordinates": [ 543812.808111152262427, 5732546.799919337965548 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "8", "Biking_Frequency": "10 > years" }, "geometry": { "type": "Point", "coordinates": [ 541482.130382717004977, 5738294.296453537419438 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "9", "Biking_Frequency": "6–10 years" }, "geometry": { "type": "Point", "coordinates": [ 544333.250710705760866, 5732275.264650005847216 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "10", "Biking_Frequency": "1–5 years" }, "geometry": { "type": "Point", "coordinates": [ 535259.447127185878344, 5734605.942378440871835 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "11", "Biking_Frequency": "10 > years" }, "geometry": { "type": "Point", "coordinates": [ 534286.445745411911048, 5734176.011535331606865 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "12", "Biking_Frequency": "6–10 years" }, "geometry": { "type": "Point", "coordinates": [ 536300.332326292875223, 5733904.476265999488533 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "13", "Biking_Frequency": "1 < year" }, "geometry": { "type": "Point", "coordinates": [ 542409.875886268913746, 5732297.892589116469026 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "14", "Biking_Frequency": "6–10 years" }, "geometry": { "type": "Point", "coordinates": [ 546279.253474253695458, 5734289.15123088657856 ] } },
+{ "type": "Feature", "properties": { "Survey_Perception": "15", "Biking_Frequency": "10 > years" }, "geometry": { "type": "Point", "coordinates": [ 542568.271460046060383, 5739018.390505090355873 ] } }
+]
+}
