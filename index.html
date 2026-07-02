@@ -196,6 +196,40 @@
                     });
                     L.heatLayer(points, { radius: 20, blur: 20, maxZoom: 13, max: 1.0, minOpacity: 0.1 }).addTo(map);
                 });
+                
+                fetch('data/BikeWorkshops.geojson')
+                .then(response => response.json())
+                .then(data => {
+                    var workshopLayer = L.geoJSON(data, {
+                        coordsToLatLng: function(coords) {
+                            var x = coords[0];
+                            var y = coords[1];
+                            var lng = (x / 20037508.34) * 180;
+                            var lat = Math.atan(Math.exp((y / 20037508.34) * Math.PI)) * 360 / Math.PI - 90;
+                            return L.latLng(lat, lng);
+                        },
+                        onEachFeature: function(feature, layer) {
+                            layer.bindPopup('<b>' + feature.properties.Workshop_Location + '</b><br>Janus France Workshop');
+                        }
+                    }).addTo(map);
+                });
+                
+                fetch('data/QPV_Locations.geojson')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    var qpvLayer = L.geoJSON(data, {
+                        style: {
+                            color: '#4CAF50',
+                            weight: 2,
+                            fillColor: '#4CAF50',
+                            fillOpacity: 0.2
+                        },
+                        onEachFeature: function(feature, layer) {
+                            layer.bindPopup('<b>' + feature.properties.nom + '</b><br>Quartier Prioritaire de la Politique de la Ville');
+                        }
+                    }).addTo(map);
+                });
             </script>
             <section id="methods">
                 <h2>Research Methods</h2>

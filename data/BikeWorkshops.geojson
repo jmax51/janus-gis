@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "BikeWorkshops",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "Workshop_Location": "Lyon 8" }, "geometry": { "type": "Point", "coordinates": [ 541290.925533978850581, 5738343.760730061680079 ] } },
+{ "type": "Feature", "properties": { "Workshop_Location": "Oullins" }, "geometry": { "type": "Point", "coordinates": [ 536443.334110474796034, 5735122.912202176637948 ] } },
+{ "type": "Feature", "properties": { "Workshop_Location": "Venissieux" }, "geometry": { "type": "Point", "coordinates": [ 544285.473770812852308, 5732927.593398819677532 ] } },
+{ "type": "Feature", "properties": { "Workshop_Location": "Lyon 8" }, "geometry": { "type": "Point", "coordinates": [ 541290.925533978850581, 5738343.760730061680079 ] } },
+{ "type": "Feature", "properties": { "Workshop_Location": "Oullins" }, "geometry": { "type": "Point", "coordinates": [ 536443.334110474796034, 5735122.912202176637948 ] } },
+{ "type": "Feature", "properties": { "Workshop_Location": "Venissieux" }, "geometry": { "type": "Point", "coordinates": [ 544285.473770812852308, 5732927.593398819677532 ] } }
+]
+}
